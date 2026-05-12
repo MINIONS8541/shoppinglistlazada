@@ -30,3 +30,18 @@ while True:
         else:
             for item in shopping_list:
                 print("-", item)
+
+    elif choice == "3":
+        item = input("Anong item ang tatanggalin?: ")
+        if item in shopping_list:
+            shopping_list.remove(item)
+            print(f"Natanggal: {item}")
+        else:
+            print("Hindi nakita ang item.")
+
+    elif choice == "4":
+        print("Goodbye!")
+        break
+
+    else:
+        print("Invalid choice. Subukan ulit.")
